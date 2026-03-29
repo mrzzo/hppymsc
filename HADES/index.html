@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
 
     <link rel="icon" href="imagens/favicon.png" type="image/png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.png">
@@ -40,6 +41,9 @@
 
     <!-- Conteúdo principal -->
     <main id="main">
+        
+        <a href="../">< VOLTAR</a>
+        
         <section id="start">
             <h1>HADES - HAPPY MUSIC!</h1>
             <p>Voce está vendo o albúm HADES by Melanie Martinez</p>
@@ -48,8 +52,9 @@
         
         <div class="menu-container">
                 <button id="menuBtn" onclick="menu1.hidden^=1">TRACKLIST</button>
-                <ol id="menu1" start="0" hidden>
-                    <a href="#start"><li>Início</li></a>
+                <ol id="menu1" start="-1" hidden>
+                    <a href="../"><li id="start">< VOLTAR</li></a>
+                    <a href="#start"><li id="start">Início</li></a>
                     <a href="#track-garbage-mm"><li>GARBAGE</li></a>
                     <a href="#track-isthisacult-mm"><li>IS THIS A CULT?</li></a>  
                     <a href="#track-possession-mm"><li>POSSESSION</li></a>
@@ -62,12 +67,12 @@
                     <a href="#track-weightwatches-mm"><li>WEIGHT WATCHES</li></a>  
                     <a href="#track-theplague-mm"><li>THE PLAGUE</li></a>
                     <a href="#track-batshitintelligence-mm"><li>BATSHIT INTELLIGENCE</li></a>
-                    <a href="#track--mm"><li></li></a>
-                    <a href="#track--mm"><li></li></a>  
-                    <a href="#track--mm"><li></li></a>
-                    <a href="#track--mm"><li></li></a>  
-                    <a href="#track--mm"><li></li></a>
-                    <a href="#track--mm"><li></li></a>                                                                              
+                    <a href="#track-gutter-mm"><li>GUTTER</li></a>
+                    <a href="#track-uncannyvalley-mm"><li>UNCANNY VALLEY</li></a>  
+                    <a href="#track-thevatican-mm"><li>THE VATICAN</li></a>
+                    <a href="#track-hellsfrontporch-mm"><li>HELL'S FRONT PORCH</li></a>  
+                    <a href="#track-chatroom-mm"><li>CHATROOM</li></a>
+                    <a href="#track-thelasttwopeopleonearth-mm"><li>THE LAST TWO PEOPLE ON EARTH</li></a>                                                                              
                 </ol>
             </div>
 
@@ -78,8 +83,14 @@
                 const btn = document.getElementById("menuBtn");
                   const menu = document.getElementById("menu1");
                 
+                // Fecha o menu ao clicar fora
+                
+                  document.addEventListener("click", (e) => {
+                    if (!menu.hidden && !menu.contains(e.target) && e.target !== btn) {
+                      menu.hidden = true;
+                    }
                   
-                  
+                  });
                   
             </script>
             <!-- // Fecha o menu ao clicar fora
@@ -769,6 +780,509 @@ No more coins to pay to live
 All my lovers died from this
 Nuclear war will take us next
 Oh, the plague, it took my—                
+            </pre>
+        </section>
+        
+        <section class="track-section" id="track-batshitintelligence-mm">
+            <h2 class="track-title">BATSHIT INTELLIGENCE</h2>
+            <pre>
+Parasite man, what is your plan?
+Claim you're the highest intelligence
+Twist with your teeth, meaty and raw
+Tell me now, who is the savage here?
+
+And if I could have a moment with you
+I'd throw all your limbs down a laundry chute
+It wouldn't be cruel, just what you accrued
+Pressure, it boils till smoke ensues
+
+Rent is high and the taxes due
+On a floating rock, burning avenues
+Where's the alien who can save us now?
+Mother Nature screams, death is guaranteed
+I'll say it again
+Burning away, woah
+Falling away, whoa
+Dying away, whoa
+I'll say it again
+Burning away, woah
+Falling away, whoa
+Dying away, whoa
+I'll say it again
+
+Heed to the warning
+Feed them the potion
+Wise are the tortured
+Trees by the ocean
+Keep your emotion
+Lead with devotion
+Kill the oppressor
+Drunk on corruption
+
+Bacteria, propaganda
+Lightning devices, designer drugs
+Breeding the youth, workers to foes
+If anyone questions the status quo
+
+Their bunkers and the war is what we work for
+Our feelings are numb and our pockets poor
+And competition, it doesn't exist
+They made it all up so we don't resist
+
+Rent is high and the taxes due
+On a floating rock, burning avenues
+Where's the alien who can save us now?
+Mother Nature screams, death is guaranteed
+I'll say it again
+Burning away, whoa
+Falling away, whoa
+Dying away, whoa
+I'll say it again
+Burning away, whoa
+Falling away, whoa
+Dying away, whoa
+I'll say it again
+
+Heed to the warning
+Feed them the potion
+Wise are the tortured
+Trees by the ocean
+Keep your emotion
+Lead with devotion
+Kill the oppressor
+Drunk on corruption
+
+Rent is high and the taxes due
+On a floating rock, burning avenues
+Where's the alien who can save us now?
+Mother Nature screams, death is guaranteed
+I'll say it again
+Burning away, whoa
+Falling away, whoa
+Dying away, whoa
+I'll say it again
+Burning away, whoa
+Falling away, whoa
+Dying away, whoa
+I'll say it again
+
+Heed to the warning
+Feed them the potion
+Wise are the tortured
+Trees by the ocean
+Keep your emotion
+Lead with devotion
+Kill the oppressor
+Drunk on corruption
+
+(Arrests today after a confrontation over the clearing of a homeless encampment)
+(We just saw the city arrest homeless people and throw all their stuff away)
+(The Sanitation Department just finished up clearing out people who had been living on the street here—)            
+            </pre>
+        </section> 
+        
+        <section class="track-section" id="track-gutter-mm">
+            <h2 class="track-title">GUTTER</h2>
+            <pre>
+One by one, the houses get stolen by corporate erosion
+Winters come with nowhere to hide out, don't sleep 'cause they'll find out
+Nobody ever thinks they'll end up broken till they're out there frozen
+Screaming: They're crazy, till you're the one begging for food for your baby
+
+You don't see the pain, see the harm
+See the carvings on their arm
+See the truth, see the lives
+See the severed family ties
+See the town where they reside
+Money don't fall out from the sky
+See the child, they have a mother
+You just throw them in the gutter
+
+No one's safe, the powers that be are so sick and deranged
+Clean the streets, they lock them in jail and make them work for free
+Nobody ever talks to their neighbour till they need a favor
+Come to the forest and build your community, don't get immune to this
+
+Don't see the pain, see the harm
+See the carvings on their arm
+See the truth, see the lives
+See the severed family ties
+See the town where they reside
+Money don't fall out from the sky
+See the child, they have a mother
+You just throw them in the gutter
+
+If everything's said and done and you're around, I'ma run
+I'd rather die than be near you
+Evil is as evil does, y'all can just go get fucked
+We'll be haunting you, haunting
+Haunting you, haunting you
+
+Don't see the pain, see the harm
+See the carving on their arm
+See the truth, see the lives
+See the severed family ties
+See the town where they reside
+Money don't fall out from the sky
+See the child, they have a mother
+You just throw them in the gutter
+
+(Gutter)
+(They'll end up broken till they're out there frozen)             
+            </pre>
+        </section> 
+        
+        <section class="track-section" id="track-uncannyvalley-mm">
+            <h2 class="track-title">UNCANNY VALLEY</h2>
+            <pre>
+Golden skin and cherry cheeks
+Some etched out abs and toned obliques
+I'm scrolling through a mess in my mind
+Crawling out the fucking mud
+I work so hard, never enough
+My body will never be your dime
+
+So please don't tell me what I owe
+Trends, they come and go
+But humans have their flaws
+Ah, beauty comes in every form
+Baby, there ain't no norm
+I'm not a blow-up doll
+
+Is that what you want?
+Uncanny valley, hot
+Never enough, give you all my love
+Ass ain't fat enough
+What the fuck? Am I out of luck?
+Uncanny valley, hot
+Never enough, give you all my love
+Never good enough
+
+Summer language we're all learning
+No one's gonna see me coming
+Finally, I will shine this time
+Laying out in my bikini, Bahamas
+I'm oiled, steamy
+Your boyfriend liked my pic this time
+
+But please don't tell me what I owe
+Trends, they come and go
+But humans have their flaws
+Ah, beauty comes in every form
+Baby, there ain't no norm
+I'm not a blow-up doll
+
+Is that what you want?
+Uncanny valley, hot
+Never enough, give you all my love
+Ass ain't fat enough
+What the fuck? Am I out of luck?
+Uncanny valley, hot
+Never enough, give you all my love
+Never good enough
+
+Is that what you want?
+Uncanny valley, hot
+Never enough, give you all my love
+Ass ain't fat enough
+What the fuck? Am I out of luck?
+Uncanny valley, hot
+Never enough, give you all my love
+Never good enough             
+            </pre>
+        </section> 
+        
+        <section class="track-section" id="track-thevatican-mm">
+            <h2 class="track-title">THE VATICAN</h2>
+            <pre>
+(Fall on your knees)
+(Get you hot)
+(Worship me)
+(Like the Vatican)
+
+Many men decorate their necks with nooses if they don't uphold supremacy
+Lose their job, kill their wife, those things come 'round in two, it's quite insane, embarrassing
+Money, power, got its chokehold on humanity
+Nothing gives these motherfuckers quite a boner like religion
+Catholic, Christian, kissing Jesus, licking AR-15s
+
+It's so homoerotic (it's so homoerotic)
+The way you pray to men (the way you pray to men)
+And treat your women (and treat your women)
+Like a Leviathan (like a Leviathan)
+Come out the closet (come out the closet)
+Sip my holy water (sip my holy water)
+Pray to this pussy (pray to this pussy)
+Confess your sins
+
+Fa-a-all on your knee-knee-knees
+Get you hot, hot, hot
+Worship me like the Vatican
+Fa-a-all on your knee-knee-knees
+Get you hot, hot, hot
+Worship me like the Vatican
+
+Bet the Pope looks so enticing, tantalizing, with the secrets that he must keep in
+Bet those robes they wear make you feel kinda freaky, well, too bad, they are all celibate
+It's no wonder all the scandals are involving hurting little boys (boys)
+If y'all just fucked each other, did some poppers, you'd see God and finally rejoice
+
+It's so homoerotic (it's so homoerotic)
+The way you pray to men (the way you pray to men)
+And treat your women (and treat your women)
+Like a Leviathan (like a Leviathan)
+Come out the closet (come out the closet)
+Sip my holy water (sip my holy water)
+Pray to this pussy (pray to this pussy)
+Confess your sins
+
+Fa-a-all on your knee-knee-knees
+Get you hot, hot, hot
+Worship me like the Vatican
+Fa-a-all on your knee-knee-knees
+Get you hot, hot, hot
+Worship me like the Vatican
+
+Don't repress yourself, express yourself
+Scream: Jesus, baby, you're hot as hell
+Mary don't quite make it swell
+But my white God fucks me real well
+Don't repress yourself, express yourself
+Scream: Jesus, baby, you're hot as hell
+Mary don't quite make it swell
+But my white God fucks me real well
+
+Fa-a-all on your knee-knee-knees
+Get you hot, hot, hot
+Worship me like the Vatican
+Fa-a-all on your knee-knee-knees
+Get you hot, hot, hot
+Worship me like the Vatican
+
+Fall on your knees
+Get you hot
+Worship me like the Vatican
+
+En el nombre del Padre
+Y del Hijo
+Y del Espíritu Santo             
+            </pre>
+        </section> 
+        
+        <section class="track-section" id="track-hellsfrontporch-mm">
+            <h2 class="track-title">HELL'S FRONT PORCH</h2>
+            <pre>
+Are we really havin' fun?
+The water we once swam in turnin' grey from all the oil spillin', baby
+Smog is seepin' in our lungs
+Wish it could get me high, 'cause if it did, then I could justify it
+
+If the summer once brought us paradise
+Drinkin' poison till we're sponges
+Kick our feet up to the Sun
+It's not so easy to get back to what it was
+Every AC here is broken, overheated, eyes are rollin', rollin'
+
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Fuckin' sweatin', dancin' on hell's front porch, baby
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Movin', drippin', meltin' on hell's front porch, baby
+
+Where have all the seasons gone?
+Evacuatin' from a fire after fire, it's not fire season
+All the animals are runnin'
+The birds are swirlin', warnin' us that we are next to be extinct
+
+And if the summer once brought us paradise
+Drinkin' poison till we're sponges
+Kick our feet up to the Sun
+It's not so easy to get back to what it was (what it was)
+Every AC here is broken, overheated, eyes are rollin', rollin'
+
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Fuckin' sweatin', dancin' on hell's front porch, baby
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Movin', drippin', meltin' on hell's front porch, baby
+
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Can somebody save us from this nightmare, baby?
+Ah-oh, ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Fuckin' sweatin', dancin' on hell's front porch, baby
+
+I wanna kiss you just in case we die, the Earth is gettin' fucked
+She wants to spit us out for breakfast and then eat us up for lunch
+'Cause we're all a bunch of parasites just drillin' on her turf
+Baby, kiss me while we're both alive before we turn to dirt, sing it
+
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Fuckin' sweatin', dancin' on hell's front porch, baby
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Movin', drippin', meltin' on hell's front porch, baby
+
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Can somebody save us from this nightmare, baby?
+Ah-oh, ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Ah-ah, ah-ah-ah-ah-ah-ah-ah-ah
+Fuckin' sweatin', dancin' on hell's front porch, baby
+
+(You've got mail)             
+            </pre>
+        </section> 
+        
+        <section class="track-section" id="track-chatroom-mm">
+            <h2 class="track-title">CHATROOM</h2>
+            <pre>
+(Dude, this fucking person keeps sendin' me death threats)
+(They're sayin' that I'm ugly as fuck and my music is shit)
+(And that I should just kill myself)
+
+Is it my dress or shoes?
+Is it the makeup on my skin?
+What can I change for you?
+What would you prefer I was in?
+
+Or is it worse? Mm-hm
+Is it something I can't fix?
+Whatever it is, mm-hm
+You seem so obsessed with it
+
+(What did I even do to them?)
+(I'm just minding my own business)
+(I don't know why that pisses them off so much)
+
+Is it the way I know
+Exactly who I am?
+Is it my blazing glow
+That makes you feel so small and dim?
+
+Nothing will stop you
+It doesn't matter what I do
+You'll never change, in your old age
+You'll be hating yourself too
+I could've fit the mold you made
+And took what you done threw
+Still, I could never make you love you
+
+Chatroom
+Who even are you? What's in it for you?
+No clue
+What you even look like, your profile's a cartoon
+Fuck you too
+I say when I'm angered, but it doesn't matter
+Chatroom (chatroom)
+You're not unique, there are hundreds just like you
+
+(I can't tell if this is a bot)
+(A forty-five-year-old incel)
+(Or a ten-year-old on their mom's iPad)
+
+Think it's the way you choose
+Every vowel methodically
+In the cafe, you spew
+Your lukewarm takes at me
+
+Is that the way you feel
+About your own sad life?
+Project your pain outward
+Aspiring to be a knife
+What a life!
+
+Nothing will stop you
+It doesn't matter what I do
+You'll never change, in your old age
+You'll be hating yourself too
+I could've fit the mold you made
+And took what you done threw
+Still, I could never make you love you
+
+(Ugh, I'm just gonna delete my account)
+
+Chatroom
+Who even are you? What's in it for you?
+No clue
+What you even look like, your profile's a cartoon
+Fuck (fuck) you too
+I say when I'm angered, but it doesn't matter
+Chatroom (chatroom)
+You're not unique, there are hundreds just like you
+
+When I stare out the window, crying
+It's 'cause you've made me hate my reflection
+In another reality, I could've loved myself
+I could've been myself
+But here I am, cramming all of your words
+Deep into my veins till it kills me
+
+Chatroom (chatroom)
+Who even are you? What's in it for you?
+No (no clue) clue
+What you even look like, your profile's a cartoon
+Fuck (fuck) you too
+I say when I'm angered, but it doesn't matter
+Chatroom (chatroom)
+You're not unique, there are hundreds just like you             
+            </pre>
+        </section> 
+        
+        <section class="track-section" id="track-thelasttwopeopleonearth-mm">
+            <h2 class="track-title">THE LAST TWO PEOPLE ON EARTH</h2>
+            <pre>
+I saw the news on TV
+Before the screen cut to all black
+I saw your face next to me
+We had a conjoined heart attack
+
+'Cause you're the only one, baby
+Who makes me wet like I'm waterboarded
+So deep it could kill me
+And right now, we could both afford it
+
+Everybody knows it, might as well come closer
+Heart to heart and sweaty, baby, everything's decaying
+Everybody's dying, you're the one I'm holding, explosions
+
+Fuck me like we're the last two people on Earth, Earth, Earth
+Fuck me like we're the last two people on Earth, Earth, Earth
+Fuck me like we're the last two people on—
+
+While everyone's out praying
+Your tongue in my mouth is my God
+Like pyromaniacs burning
+You are the flame that gets me off
+'Cause you're the only one, baby
+Who makes me hot like a volcano
+Catastrophic orgasm
+That can wipe out the whole nation
+
+Everybody knows it, might as well come closer
+Heart to heart and sweaty, baby, everything's decaying
+Everybody's dying, you're the one I'm holding, explosions
+
+Fuck me like we're the last two people on Earth, Earth, Earth
+Fuck me like we're the last two people on Earth, Earth, Earth
+Fuck me like we're the last two people on—
+
+Ooh-ooh-ooh
+The buildings are burning, my body is yearning
+Ooh-ooh-ooh
+Can we die together? And is there a heaven?
+
+Everybody knows it, others won't come closer
+Fuck me like we're the last two people on—
+Everybody's dying, you're the one I'm holding, explosions
+
+Fuck me like we're the last two people on Earth, Earth, Earth
+Fuck me like we're the last two people on Earth, Earth, Earth
+Fuck me like we're the last two people on—             
             </pre>
         </section> 
         
